@@ -1,0 +1,125 @@
+/* styles.css */
+
+/* Sidebar Section */
+.favorites-section {
+  padding: 8px 8px 0 8px;
+  margin-bottom: 8px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.favorites-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #8e8ea0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  user-select: none;
+  transition: color 0.2s;
+}
+
+.favorites-header:hover {
+  color: #ececf1;
+}
+
+.favorites-header-content {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.favorites-chevron {
+  transition: transform 0.2s;
+  opacity: 0.7;
+}
+
+.favorites-header:hover .favorites-chevron {
+  opacity: 1;
+}
+
+.favorites-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.favorites-list li {
+  margin-bottom: 2px;
+}
+
+.favorite-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  color: #ececf1;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background-color 0.2s;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.favorite-item:hover {
+  background-color: #2A2B32;
+}
+
+.empty-msg {
+  padding: 8px 12px;
+  font-size: 13px;
+  color: #8e8ea0;
+  font-style: italic;
+}
+
+/* Context Menu Item */
+.add-to-favorites-btn {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  margin: 4px;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #ececf1;
+  font-size: 14px;
+  user-select: none;
+  transition: background-color 0.2s;
+}
+
+.add-to-favorites-btn:hover {
+  background-color: #40414F; /* Hover color similar to other items */
+}
+
+.fav-icon {
+  font-size: 16px;
+}
+
+/* Toast Notification */
+#fav-toast {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background-color: #10a37f;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 9999;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.3s, transform 0.3s;
+  pointer-events: none;
+}
+
+#fav-toast.show {
+  opacity: 1;
+  transform: translateY(0);
+}

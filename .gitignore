@@ -1,0 +1,21 @@
+# OS specific
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# IDE specific
+.vscode/
+.idea/
+
+# Node modules (if you add npm later)
+node_modules/
+package-lock.json
+yarn.lock
+
+# Build artifacts (if you add a build step later)
+dist/
+build/
+
+# Logs
+*.log
+npm-debug.log*
