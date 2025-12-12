@@ -1,5 +1,7 @@
 <div align="center">
 
+<img width="3600" height="2025" alt="GithubPromo" src="https://github.com/user-attachments/assets/064c552d-d3d9-4f29-b85c-b73af3f89169" />
+
 # ✨ ChatGPT Favorites
 
 **Enhance your ChatGPT experience by saving important chats for quick access.**
@@ -10,6 +12,9 @@
 [![Version](https://img.shields.io/badge/Version-1.0.0-blue?style=for-the-badge)](https://github.com/yourusername/chatgpt-favorites)
 
 </div>
+
+
+
 
 ---
 
