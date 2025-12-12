@@ -184,7 +184,9 @@
       padding-top: 12px;
       border-top: 1px solid var(--border);
       display: flex;
-      justify-content: flex-end;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
     }
 
     .btn-ghost {
@@ -202,6 +204,18 @@
     .btn-ghost:hover {
       color: var(--foreground);
       background-color: var(--accent);
+    }
+
+    .footer-link {
+      color: var(--muted-foreground);
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+
+    .footer-link:hover {
+      color: var(--foreground);
+      text-decoration: underline;
     }
 
     /* Scrollbar */
@@ -230,19 +244,19 @@
       <h1><span>✨</span> Favorites</h1>
       <span id="count-badge" class="badge">0</span>
     </header>
-
     <ul id="favorites-list">
       <!-- Favorites will be injected here -->
     </ul>
-
     <div id="empty-state" class="empty-state" style="display: none;">
       <div class="empty-icon">📂</div>
       <p>No favorite chats yet.</p>
       <p style="font-size: 12px; margin-top: 4px;">Click the three dots on a chat to add it.</p>
     </div>
-
     <footer>
       <button id="clear-all" class="btn-ghost">Clear All</button>
+      <div style="font-size: 11px; color: var(--muted-foreground);">
+        Made by Sayoun <a href="https://x.com/DriftNBlde" target="_blank" class="footer-link">(@DriftNBlde)</a>
+      </div>
     </footer>
   </div>
   <script src="popup.js"></script>
