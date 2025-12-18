@@ -5,7 +5,6 @@
   "description": "Add important chats to a favorites section in the sidebar.",
   "permissions": [
     "storage",
-    "scripting",
     "activeTab"
   ],
   "host_permissions": [
@@ -28,8 +27,12 @@
         "https://chat.openai.com/*",
         "https://chatgpt.com/*"
       ],
-      "js": ["content.js"],
-      "css": ["styles.css"]
+      "js": [
+        "content.js"
+      ],
+      "css": [
+        "styles.css"
+      ]
     }
   ]
 }
